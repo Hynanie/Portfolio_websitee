@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Nani's project portfolio showcasing creative works">
+  <title>Projects - Nani's Portfolio</title>
+  <link rel="stylesheet" href="projects-style.css">
+  <style>
+    /* Base Styles */
+    body {
+      background-image: url('https://64.media.tumblr.com/578ed7dbe9e1ab2f938d1cdb789a9de2/9aad0ce247ef6597-d9/s500x750/a03e154c2760904535590144a7a421ac056cf636.gifv');
+      background-size: cover;
+      background-attachment: fixed;
+      font-family: 'Roboto Condensed', sans-serif;
+      color: white;
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    /* Navigation */
+    nav {
+      background-color: rgba(11, 43, 18, 0.71);
+      padding: 10px 0;
+      font-family: 'Splash', cursive;
+    }
+
+    nav .logo {
+      height: 60px;
+      width: auto;
+    }
+
+    nav .links {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 15px;
+      padding: 0;
+      list-style: none;
+      flex-wrap: wrap;
+    }
+
+    nav .links a {
+      text-decoration: none;
+      color: #edc886;
+      font-size: clamp(0.9rem, 2vw, 1rem);
+      transition: all 0.3s ease;
+    }
+
+    nav .links a:hover {
+      text-decoration: underline;
+      color: #ffcc00;
+    }
+
+    /* Main Content */
+    main {
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 10px;
+      margin: 20px 0;
+      padding: 20px;
+      backdrop-filter: blur(5px);
+    }
+
+    .project-header {
+      background-image: url('https://i.pinimg.com/originals/c6/92/11/c69211ae836eb9ea3dd5a887feeec6c0.jpg');
+      background-position: center;
+      background-size: cover;
+      height: 150px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      filter: grayscale(40%);
+    }
+
+    .project-header h1 {
+      background-color: rgba(21, 44, 24, 0.63);
+      padding: 10px 20px;
+      border-radius: 5px;
+    }
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+
+    .project-card {
+      background-color: rgba(66, 102, 55, 0.72);
+      border-radius: 8px;
+      padding: 15px;
+      transition: transform 0.3s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .project-card h2 {
+      color: #9adaa3;
+      margin-top: 0;
+    }
+
+    .project-card img {
+      width: 100%;
+      border-radius: 5px;
+      margin-bottom: 10px;
+      border: 2px dashed rgba(255, 255, 255, 0.3);
+    }
+
+    .project-links a {
+      color: #edc886;
+      margin-right: 10px;
+      text-decoration: none;
+    }
+
+    .project-links a:hover {
+      text-decoration: underline;
+      color: #ffcc00;
+    }
+
+    /* Online Status */
+    .online-status {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .online {
+      width: 95px;
+      animation: shake 3.5s infinite;
+    }
+
+    @keyframes shake {
+      0% { transform: translate(1px, 1px) rotate(0deg); }
+      10% { transform: translate(-1px, -2px) rotate(-1deg); }
+      20% { transform: translate(-3px, 0px) rotate(1deg); }
+      30% { transform: translate(3px, 2px) rotate(0deg); }
+      40% { transform: translate(1px, -1px) rotate(1deg); }
+      50% { transform: translate(-1px, 2px) rotate(-1deg); }
+      60% { transform: translate(-3px, 1px) rotate(0deg); }
+      70% { transform: translate(3px, 1px) rotate(-1deg); }
+      80% { transform: translate(-1px, -1px) rotate(1deg); }
+      90% { transform: translate(1px, 2px) rotate(0deg); }
+      100% { transform: translate(1px, -2px) rotate(-1deg); }
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 15px;
+      background-color: rgba(255, 255, 255, 0.1);
+      margin-top: auto;
+    }
+
+    main, footer, nav {
+      animation: float 3s infinite ease-in-out;
+    }
+
+    /* Cursor */
+    * {
+      cursor: url('https://cur.cursors-4u.net/nature/nat-6/nat509.cur'), auto !important;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .projects-grid {
+        grid-template-columns: 1fr;
+      }
+      
+      .project-header {
+        height: 100px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="container">
+        <ul class="links">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="projects.html">Projects</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="project-header">
+        <h1>My Projects</h1>
+      </div>
+
+      <div class="online-status">
+        <img class="online" src="https://i.postimg.cc/MGrJtnPJ/iHFK4Lf.png" alt="Online status indicator">
+        <p>currently creating</p>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <div class="project-card">
+          <img src="https://i.pinimg.com/564x/ce/53/79/ce5379b84acc09e018ae4712e74718a2.jpg" alt="Ecochallenge" loading="lazy">
+          <h2>ecoChallenge</h2>
+          <p>A climate action app that encourages sustainable behaviors through interactive challenges, tracking, and community engagement to combat climate change.</p>
+          <div class="project-links">
+            <a href="https://github.com/Hynanie" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://youtu.be/IH2eHm7cOjQ" target="_blank" rel="noopener noreferrer">Live Demo</a>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card">
+          <img src="https://i.pinimg.com/564x/5c/31/1d/5c311dbe6c26c27753f37eef87792d24.jpg" alt="Candycane Smart Table" loading="lazy">
+          <h2>CandyCane Smart Table</h2>
+          <p>A Smart Table designed to help the student to order their order accurately and easily. It provides real time table availability
+            and help student book available seats whenever they wanted.
+          </p>
+          <div class="project-links">
+            <a href="https://youtu.be/8R7fP7lrV5I?si=Mdbf2uQ5yQapGuVB" target="_blank" rel="noopener noreferrer">Concept Video</a>
+            <a href="https://candycaneblog.mystrikingly.com/" target=_blank rel="noopener noreferrer">Website</a>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card">
+          <img src="https://i.pinimg.com/736x/93/d7/45/93d745d42afde52072db406b24502ad1.jpg" alt="Art Portfolio" loading="lazy">
+          <h2>Art Portfolio</h2>
+          <p>Portfolio of my digital illustrations</p>
+          <div class="project-links">
+            <a href="https://drive.google.com/drive/folders/13XqTTsVK0aJ8JjMzaim5kwybcuTGiaiO" target="_blank" rel="noopener noreferrer">Portfolio</a>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-card">
+          <img src="https://i.pinimg.com/736x/bc/b8/5a/bcb85a8f62959b3e9392879860a85a0e.jpg" alt="Online Shopping System" loading="lazy">
+          <h2>Online Shopping System</h2>
+          <p>OOP programming that uses Quick sort and binary search to add items and remove items in the cart.</p>
+          <div class="project-links">
+            <a href="https://docs.google.com/document/d/1pjBwpzYV-ZsaAVvZgEXyV84MdaAxIGKbu1yGyrBEPWg/edit?usp=sharing" target="_blank" rel="noopener noreferrer">Documentation</a>
+          </div>
+        </div>
+
+
+  </main>
+
+  <footer>
+    <p>🌊Thank you for stopping by!🌊</p>
+  </footer>
+
+    <audio autoplay loop hidden>
+    <source src="audio/fish in the pool花屋敷.mp3" type="audio/mpeg">
+    Your browser does not support background music.
+    </audio>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Hanani's personal portfolio showcasing projects and interests">
+  <title>Welcome to Nani's Website</title>
+  <link rel="stylesheet" href="home-style.css">
+  
+  <style>
+    /* Critical CSS - Inlined for performance */
+    .fun-facts {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 40px;
+      padding: 0 20px;
+    }
+
+    .fact-card {
+      background-color: rgba(92, 167, 207, 0.7);
+      border: 2px dashed #2471A3;
+      border-radius: 15px;
+      padding: 15px;
+      transition: all 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .fact-card:hover {
+      transform: translateY(-5px);
+      background-color: rgba(92, 167, 207, 0.9);
+    }
+
+    .fact-card img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 10px;
+      border: 2px dotted #2471A3;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0px); }
+    }
+
+    .floating {
+      animation: float 3s ease-in-out infinite;
+      will-change: transform;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav aria-label="Main navigation">
+      <div class="container">
+        <ul class="links">
+          <li><a href="home.html" aria-current="page">Home</a></li>
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="projects.html">Projects</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="main-heading">
+      <div class="main-content">
+        <img class="profile-pic floating" src="images/iconn.webp" alt="Profile Picture of Nur Hanani" width="120" height="120" loading="eager">
+        <div class="text-content">
+          <h1 id="main-heading"><span class="star">★</span> Welcome to My Website <span class="star">★</span></h1>
+          <p>Hi, I'm Nur Hanani! This is my very own website that will showcase my portfolios!</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="fun-facts" aria-labelledby="facts-heading">
+      <h2 id="facts-heading" class="visually-hidden">Fun Facts</h2>
+      <div class="fact-card">
+        <img src="https://i.pinimg.com/736x/db/d8/bd/dbd8bd36936ddf072b520d0e0822a862.jpg" alt="Digital art illustration" width="100" height="100" loading="lazy">
+        <h3>Digital Artist</h3>
+        <p>Freelance illustrator who loves creating cute characters and vibrant scenes</p>
+      </div>
+      
+      <div class="fact-card">
+        <img src="https://i.pinimg.com/originals/f3/a2/7f/f3a27f3b53eae52a6cbba59f1c2b5f73.gif" alt="Code animation" width="100" height="100" loading="lazy">
+        <h3>Code Enthusiast</h3>
+        <p>Currently learning HTML/CSS/JS while having C++ experience</p>
+      </div>
+      
+      <div class="fact-card">
+        <img src="https://i.pinimg.com/736x/7d/02/f4/7d02f4935c233a8d3b21f88549cf7231.jpg" alt="Ocean scene with sharks" width="100" height="100" loading="lazy">
+        <h3>Shark Lover</h3>
+        <p>I love the oceans and anything blue related (sharks)</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>🌊 Floating somewhere online since May 2025 🌊</p>
+    <div class="social-links">
+      <a href="https://github.com/yourusername" aria-label="GitHub profile">GitHub</a>
+      <a href="https://linkedin.com/in/yourusername" aria-label="LinkedIn profile">LinkedIn</a>
+    </div>
+  </footer>
+
+  <script src="scripts/main.js" defer></script>
+</body>
+</html>
