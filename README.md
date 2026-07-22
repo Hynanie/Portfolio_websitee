@@ -5,7 +5,7 @@ Personal portfolio site for Nur Hanani Binti Ahmad — Graphics & Multimedia Sof
 </p>
 
 <p align="center">
-<a href="https://hynanie.github.io/Portfolio_websitee/">hynanie.github.io/Portfolio_websitee</a>
+<a href="https://hynanie.github.io/Portfolio_websitee/"><b>hynanie.github.io/Portfolio_websitee</b></a>
 </p>
 
 <br>
@@ -14,23 +14,29 @@ Personal portfolio site for Nur Hanani Binti Ahmad — Graphics & Multimedia Sof
 
 This is my personal portfolio website, built to showcase my background, skills, and project work as a Computer Science (Graphics & Multimedia Software) student.
 
-The site covers my background, technical skills, and selected projects across game development, VR/AR, and interactive media.
+- Introduces my background and areas of focus
+- Lists my technical skills and tools
+- Showcases selected projects across game development, VR/AR, and interactive media
 
 <br>
 
 ## Pages
 
-**index.html** — homepage and introduction
-
-**about.html** — background, education, and skills
-
-**projects.html** — project showcase
+| Page | Description |
+|---|---|
+| `index.html` | Homepage and introduction |
+| `about.html` | Background, education, and skills |
+| `projects.html` | Project showcase |
 
 <br>
 
 ## Tech Stack
 
-HTML, CSS, JavaScript
+| Category | Tools |
+|---|---|
+| Structure | HTML |
+| Styling | CSS |
+| Interactivity | JavaScript |
 
 <br>
 
@@ -52,8 +58,6 @@ Portfolio_websitee/
 
 ## Running Locally
 
-Clone the repository and open `index.html` directly in a browser, or serve it locally:
-
 ```
 git clone https://github.com/Hynanie/Portfolio_websitee.git
 cd Portfolio_websitee
@@ -65,14 +69,15 @@ Then open `index.html` in your browser.
 
 ## Deployment
 
-Hosted with GitHub Pages, deployed from the `main` branch.
-
-Live at: [hynanie.github.io/Portfolio_websitee](https://hynanie.github.io/Portfolio_websitee/)
+- Hosted with GitHub Pages
+- Deployed from the `main` branch
+- Live at: [hynanie.github.io/Portfolio_websitee](https://hynanie.github.io/Portfolio_websitee/)
 
 <br>
 
 ## Contact
 
-Email: hynanie04@gmail.com
-
-LinkedIn: [nur-hanani-binti-ahmad](https://www.linkedin.com/in/nur-hanani-binti-ahmad-b636333a3/)
+| | |
+|---|---|
+| Email | hynanie04@gmail.com |
+| LinkedIn | [nur-hanani-binti-ahmad](https://www.linkedin.com/in/nur-hanani-binti-ahmad-b636333a3/) |
